@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+	<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | My Porsche</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
@@ -10,7 +10,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1290 height=2796 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -53,12 +53,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/09.loader.js";
+      var loaderUrl = buildUrl + "/08.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/09.data.unityweb",
-        frameworkUrl: buildUrl + "/09.framework.js.unityweb",
-        codeUrl: buildUrl + "/09.wasm.unityweb",
+        dataUrl: buildUrl + "/08.data.unityweb",
+        frameworkUrl: buildUrl + "/08.framework.js.unityweb",
+        codeUrl: buildUrl + "/08.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "My Porsche",
@@ -105,8 +105,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "1080px";
-        canvas.style.height = "1920px";
+        canvas.style.width = "1290px";
+        canvas.style.height = "2796px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
