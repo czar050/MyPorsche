@@ -27,6 +27,7 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
+		window.unityInstance = unityInstance;
         arguments: [],
         dataUrl: "Build/12.data.unityweb",
         frameworkUrl: "Build/12.framework.js.unityweb",
