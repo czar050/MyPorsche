@@ -26,22 +26,22 @@
 
       }
 
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-		window.unityInstance = unityInstance;
-        arguments: [],
-        dataUrl: "Build/13.data.unityweb",
-        frameworkUrl: "Build/13.framework.js.unityweb",
-        codeUrl: "Build/13.wasm.unityweb",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "My Porsche",
-        productVersion: "0.1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      }).then((unityInstance) => {
-      }).catch((message) => {
-        alert(message);
-      });
+      
+		createUnityInstance(document.querySelector("#unity-canvas"), {
+			arguments: [],
+			dataUrl: "Build/13.data.unityweb",
+			frameworkUrl: "Build/13.framework.js.unityweb",
+			codeUrl: "Build/13.wasm.unityweb",
+			streamingAssetsUrl: "StreamingAssets",
+			companyName: "DefaultCompany",
+			productName: "My Porsche",
+			productVersion: "0.1.0",
+		}).then((unityInstance) => {
+			window.unityInstance = unityInstance;
+		}).catch((message) => {
+			alert(message);
+		});
+
     </script>
   </body>
 </html>
